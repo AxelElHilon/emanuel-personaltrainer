@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Emanuel Spahn - Entrenador Personal</title>
+    <link rel="icon" href="/favicon.ico" />
+    <link rel="stylesheet" href="/src/style.css">
+  </head>
+  <body class="bg-[#0C2C40] text-white font-sans">
+
+    <header class="fixed top-0 left-0 w-full bg-[#0C2C40] z-50 shadow-md">
+      <div class="max-w-7xl mx-auto px-4 py-3 flex items-center justify-between">
+        
+        <!-- Logo -->
+        <a href="#hero" class="flex items-center gap-2">
+          <img src="/logo-noname.png" alt="Logo Emanuel Spahn" class="w-20 h-20 transition duration-500 ease-in-out transform hover:scale-110 animate-fade-in" />
+        </a>
+    
+        <!-- Enlaces -->
+        <nav class="space-x-4">
+          <a href="#paquetes" class="text-white hover:text-[#F47C20] transition">Paquetes</a>
+          <a href="#sobremi" class="text-white hover:text-[#F47C20] transition">Sobre mí</a>
+          <a href="#contacto" class="text-white hover:text-[#F47C20] transition">Contacto</a>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Hero -->
+   <section id="hero" class="relative h-screen bg-cover bg-center flex items-center justify-center text-center px-6"
+         style="background-image: url('/hero.jpg');">
+         <div class="absolute inset-0 bg-black/50 z-10"></div>
+        <div class="relative z-20 max-w-3xl text-white">
+        <h1 class="text-4xl md:text-5xl font-bold mb-4 text-[#39C0C8]">Comenzá tu cambio físico</h1>
+        <p class="text-lg mb-6">Entrenamientos personalizados, rutinas claras y resultados reales.</p>
+        <a href="#paquetes" class="bg-[#F47C20] hover:bg-[#e06b10] text-white font-bold py-3 px-6 rounded transition">
+          Ver Paquetes
+        </a>
+      </div>
+    </section>
+
+    <!-- Sobra mi -->
+    <section id="sobremi" class="bg-[#0C2C40] text-white py-16 px-6">
+      <div class="max-w-4xl mx-auto text-center">
+        <h2 class="text-3xl font-bold text-[#39C0C8] mb-6">Sobre mí</h2>
+        <p class="text-lg leading-relaxed">
+          Soy Emanuel Spahn, entrenador personal con más de 5 años de experiencia ayudando a personas como vos a transformar su cuerpo y su estilo de vida. Trabajo con planes personalizados, motivación constante y un enfoque realista basado en tus objetivos.
+        </p>
+      </div>
+    </section>
+
+    <!-- Paquetes -->
+    <section id="paquetes" class="py-20 px-6">
+      <h2 class="text-3xl font-bold text-center text-[#39C0C8] mb-10">Paquetes de Entrenamiento</h2>
+      <div id="cards" class="flex flex-wrap justify-center gap-8"></div>
+
+      <div class="text-center mt-10">
+        <a id="btn-whatsapp" href="#" target="_blank" class="inline-block bg-[#F47C20] hover:bg-[#e06b10] text-white font-bold py-3 px-6 rounded-lg transition">Contactar por WhatsApp</a>
+      </div>
+    </section>
+
+
+    <footer id="contacto" class="bg-[#0C2C40] text-white pt-12 pb-6 px-4 mt-10">
+      <div class="max-w-5xl mx-auto flex flex-col items-center text-center space-y-6">
+        
+        <!-- Logo grande -->
+        <img src="/logo-noname.png" alt="Logo Emanuel" class="w-20 h-20" />
+        
+        <!-- Nombre + frase -->
+        <div>
+          <h3 class="text-2xl font-bold">Emanuel Spahn</h3>
+          <p class="text-[#39C0C8]">Entrenador Personal & Coach Online</p>
+        </div>
+    
+        <!-- Redes sociales -->
+        <div class="flex gap-6 text-xl">
+          <a href="https://wa.me/549XXXXXXXXXX" target="_blank" class="hover:text-[#F47C20] transition">🟢 WhatsApp</a>
+          <a href="https://instagram.com/emanuel" target="_blank" class="hover:text-[#F47C20] transition">📸 Instagram</a>
+          <a href="mailto:emanuel@email.com" class="hover:text-[#F47C20] transition">✉️ Email</a>
+        </div>
+    
+        <!-- Año dinámico -->
+        <p class="text-sm text-gray-400">
+          &copy; <span id="anio-actual"></span> Emanuel Spahn. Todos los derechos reservados.
+        </p>
+      </div>
+    </footer>
+    
+      <!-- Botón flotante del carrito -->
+      <button id="abrir-carrito" class="fixed bottom-6 right-6 bg-[#F47C20] hover:bg-[#e06b10] text-white p-4 rounded-full shadow-lg z-50">
+        🛒
+      </button>
+
+      <!-- Panel del carrito (inicialmente oculto) -->
+      <div id="panel-carrito" class="fixed bottom-20 right-6 bg-white text-[#0C2C40] w-80 p-6 rounded-2xl shadow-2xl hidden z-50 border border-[#39C0C8]">
+        <h3 class="text-2xl font-bold text-[#39C0C8] mb-4 text-center">🛒 Tu Carrito</h3>
+        
+        <ul id="lista-carrito" class="space-y-2 mb-4 max-h-60 overflow-y-auto pr-2 custom-scrollbar"></ul>
+      
+        <p id="total-carrito" class="text-lg font-semibold mb-4 text-center border-t border-gray-200 pt-3"></p>
+      
+        <div class="flex flex-col gap-3">
+          <button id="vaciar-carrito" class="bg-red-500 hover:bg-red-600 text-white font-semibold py-2 px-4 rounded-lg transition duration-200">
+            Vaciar carrito 🗑️
+          </button>
+          <a id="btn-whatsapp-carrito" href="#" target="_blank" class="bg-[#39C0C8] hover:bg-[#2aa1a8] text-white font-semibold py-2 px-4 rounded-lg text-center transition duration-200">
+            Finalizar por WhatsApp 💬
+          </a>
+        </div>
+      </div>
+      
+
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
