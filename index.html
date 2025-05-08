@@ -6,6 +6,7 @@
     <title>Emanuel Spahn - Entrenador Personal</title>
     <link rel="icon" href="/favicon.ico" />
     <link rel="stylesheet" href="/src/style.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   </head>
   <body class="bg-[#0C2C40] text-white font-sans">
 
@@ -31,7 +32,7 @@
     <section id="hero" class="relative h-screen bg-cover bg-center flex items-center justify-center text-center px-6"
     style="background-image: url('/hero.jpg');">
     <div class="absolute inset-0 bg-black/50 z-10"></div>
-      
+
     <div class="relative z-20 max-w-3xl text-white opacity-0 animate-fade-in-up">
       <h1 class="text-4xl md:text-5xl font-bold mb-4 text-[#39C0C8]">Comenzá tu cambio físico</h1>
       <p class="text-lg mb-6">Entrenamientos personalizados, rutinas claras y resultados reales.</p>
@@ -122,5 +123,9 @@
       
 
     <script type="module" src="/src/main.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
