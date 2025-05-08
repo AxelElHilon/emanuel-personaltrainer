@@ -64,6 +64,13 @@
     <!-- Paquetes -->
     <section id="paquetes" class="py-20 px-6" data-aos="fade-up" data-aos-duration="1000">
       <h2 class="text-3xl font-bold text-center text-[#39C0C8] mb-10">Paquetes de Entrenamiento</h2>
+      <p class="text-center text-lg text-white max-w-2xl mx-auto mb-6">
+        Elegí el paquete que más se adapte a tus necesidades y objetivos. 
+        Cada uno incluye un plan de entrenamiento personalizado y seguimiento continuo.
+      <p class="text-center text-lg text-white max-w-2xl mx-auto mb-6">
+        Hacé clic en el tipo de entrenamiento que te interese para ver los distintos niveles disponibles 💪🔥
+      </p>
+
       <div id="cards" class="flex flex-wrap justify-center gap-8"></div>
 
       <div class="text-center mt-10">
@@ -99,9 +106,14 @@
     </footer>
     
       <!-- Botón flotante del carrito -->
-      <button id="abrir-carrito" class="fixed bottom-6 right-6 bg-[#F47C20] hover:bg-[#e06b10] text-white p-4 rounded-full shadow-lg z-50">
+      <button 
+        id="abrir-carrito" 
+        aria-label="Abrir carrito de compras" 
+        class="fixed bottom-6 right-6 bg-[#F47C20] hover:bg-[#e06b10] text-white p-4 rounded-full shadow-lg z-50 transition transform hover:scale-110 focus:outline-none"
+      >
         🛒
       </button>
+
 
       <!-- Panel del carrito (inicialmente oculto) -->
       <div id="panel-carrito" class="fixed bottom-20 right-6 bg-white text-[#0C2C40] w-80 p-6 rounded-2xl shadow-2xl hidden z-50 border border-[#39C0C8]">
@@ -115,9 +127,17 @@
           <button id="vaciar-carrito" class="bg-red-500 hover:bg-red-600 text-white font-semibold py-2 px-4 rounded-lg transition duration-200">
             Vaciar carrito 🗑️
           </button>
-          <a id="btn-whatsapp-carrito" href="#" target="_blank" class="bg-[#39C0C8] hover:bg-[#2aa1a8] text-white font-semibold py-2 px-4 rounded-lg text-center transition duration-200">
-            Finalizar por WhatsApp 💬
+          <a 
+            id="btn-whatsapp-carrito" 
+            href="#" 
+            target="_blank" 
+            aria-label="Finalizar compra por WhatsApp" 
+            class="bg-[#39C0C8] hover:bg-[#2aa1a8] text-white font-semibold py-2 px-4 rounded-lg text-center transition duration-200 flex items-center justify-center gap-2"
+          >
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 fill-current" viewBox="0 0 24 24"><path d="M20.52 3.48a11.79 11.79 0 00-16.69 0A11.86 11.86 0 003 12.37L2 21.54l9.32-1a11.8 11.8 0 009.2-17.06zM12 20a9.27 9.27 0 01-4.72-1.29l-.34-.21-5.55.59.59-5.44-.22-.36A9.32 9.32 0 1112 20zm5.56-7.34c-.31-.16-1.84-.91-2.12-1s-.5-.15-.71.16-.82 1-1 1.2-.37.23-.68.08a7.57 7.57 0 01-2.22-1.37 8.35 8.35 0 01-1.56-1.93c-.16-.27 0-.42.12-.57s.27-.3.4-.45a1.92 1.92 0 00.27-.45.49.49 0 000-.49c0-.15-.68-1.65-.94-2.26s-.49-.5-.68-.51a1.07 1.07 0 00-.48.05 1 1 0 00-.72.71 3 3 0 00.13 2.25A11.3 11.3 0 0012 17.6a6.13 6.13 0 003.77 1.09 3.28 3.28 0 002.18-1.53 2.8 2.8 0 00.25-1.53c-.12-.13-.28-.2-.64-.36z"/></svg>
+            Finalizar por WhatsApp
           </a>
+
         </div>
       </div>
       
